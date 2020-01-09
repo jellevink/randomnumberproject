@@ -6,10 +6,10 @@ import os
 @app.route('/')
 @app.route('/home', methods=['GET', 'POST'])
 def home():
-    combined=requests.get('http://localhost:5003').text
-    print(combined)
+    response=requests.get('http://localhost:5003').text
+    print(response)
 
-    return render_template('home.html', title='Home')
+    return render_template('home.html', title='Home', data=response)
 
 @app.route('/about')
 def about():
