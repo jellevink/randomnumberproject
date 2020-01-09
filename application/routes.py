@@ -1,5 +1,7 @@
-from flask import render_template
+from flask import render_template, request, session
 from application import app
+import requests
+import os
 
 @app.route('/')
 @app.route('/home')
@@ -18,7 +20,3 @@ def login():
 def register():
     return render_template('register.html', title='Register')
 
-@app.route('/writestuff', methods=["GET"])
-def page():
-    res = requests.post( "http://flask-sequence:5000/getrandomsequence)
-    return return_template('home.html')
