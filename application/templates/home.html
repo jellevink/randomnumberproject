@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 {% block body_content %}
    <h1>Home Page</h1>
+   <button id="{{ buttons[0] }}" onclick="window.location.href='{{ url_for("page") }}'">{{ buttons[0] }} </button>
    <p>Welcome to this web app!</p>
 {% endblock body_content %}

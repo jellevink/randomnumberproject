@@ -17,3 +17,8 @@ def login():
 @app.route('/register')
 def register():
     return render_template('register.html', title='Register')
+
+@app.route('/writestuff', methods=["GET"])
+def page():
+    res = requests.post( "http://flask-sequence:5000/getrandomsequence)
+    return return_template('home.html')
