@@ -1,3 +1,7 @@
 /flask/application/venv/
 */__pycache__/
 /application/__pycache__/
+/random1/__pycache__/
+/random2/__pycache__/
+/combine/__pycache__/
+/flask/__pycache__/

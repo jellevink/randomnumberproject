@@ -6,7 +6,7 @@ import random
 
 @app.route('/', methods=["GET"])
 def makerandomnum2():
-    rand_num2=str(random.randint(1,100))
+    rand_num2=str(random.randint(1,10))
     print(rand_num2)
     return rand_num2
 print(makerandomnum2())
