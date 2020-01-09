@@ -12,10 +12,14 @@ def makesequence():
     randnumber2 = requests.post( "http://flask-number2:5000/randomnumber2")
     return {"sequence":sequence}"""
 
-@app.route('/', methods=["POST"])
+@app.route('/', methods=["GET","POST"])
 def combine():
-    random_number1 = requests.post('http://random1:5001')
-    random_number2 = requests.post('http://random2:5002')
-    return random_number1, "+", random_number2
-
+    random_number1 = requests.get('http://localhost:5001').text
+    random_number2 = requests.get('http://localhost:5002').text
+    print(random_number1)
+    print(random_number2)
+    randoms = str(int(random_number1)+int(random_number2))
+    print(randoms)
+    return randoms
+print(combine())
 
