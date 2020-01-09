@@ -4,7 +4,7 @@ from flask import request, render_template
 import requests
 import random
 
-@app.route(, methods=["POST"])
+@app.route('/randomnumber2', methods=["POST"])
 def makerandomnum2():
     rand_num2=random.randint(1,100)
    # print(rand_num2)

@@ -4,7 +4,7 @@ from application import app
 import requests
 import random
 
-@app.route(, methods=["POST"])
+@app.route('/randomnumber1', methods=["POST"])
 def makerandomnum1():
     rand_num1=random.randint(1,100)
    # print(rand_num1)
