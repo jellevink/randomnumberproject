@@ -24,15 +24,19 @@ def register():
     if form.validate_on_submit():
         #hash password
         hashed_pw = bcrypt.generate_password_hash(form.password.data)
-        user = User(username=form.username.data, email=form.email.data, password=hashed_pw)
+        user = User(email=form.email.data,
+                    first_name=form.first_name.data,
+                    last_name=form.last_name.data,
+                    password=hashed_pw)
         #adds user to database
         db.session.add(user)
         db.session.commit()
-        return redirect(url_for('home'))
+        return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
 
 @app.route('/about')
+@login_required
 def about():
     return render_template('home.html', title='About')
 
@@ -69,12 +73,13 @@ def logout():
 def account():
         form = UpdateAccountForm()
         if form.validate_on_submit():
-                current_user.username = formu.username.data
+                current_user.first_name = form.first_name.data
+                current_user.last_name = form.last_name.data
                 current_user.email = form.email.data
                 db.session.commit()
-                return redirect(url_for('account'))
         elif request.method == 'GET':
-                form.username.data = current_user.username
+                form.first_name.data = current_user.first_name
+                form.last_name.data = current_user.last_name
                 form.email.data = current_user.email
         return render_template('account.html', title='Account', form=form)
 
