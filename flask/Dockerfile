@@ -1,8 +1,8 @@
 FROM python:3.6
 WORKDIR /app
-COPY requirements.txt /app/requirements.txt
+COPY requirements.txt .
 RUN pip3 install -r requirements.txt
-ENTRYPOINT ["usr/local/bin/python3", "app.py"]
+ENTRYPOINT ["python3", "app.py"]
 COPY . .
 
 ENV MYSQL_USER=${MYSQL_USER}
