@@ -9,7 +9,7 @@ import os
 @app.route('/')
 @app.route('/home', methods=['GET', 'POST'])
 def home():
-    response=requests.get('http://localhost:5003').text
+    response=requests.get('http://combine:5003').text
     print(response)
 
     return render_template('home.html', title='Home', data=response)
