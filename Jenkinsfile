@@ -5,6 +5,8 @@ pipeline{
 		stage('--Build Docker--'){
 			steps{
 				sh '''. ~/.bashrc
+				      pwd
+				      ls
 				      docker-compose build
 				      docker-compose push
 				      '''
