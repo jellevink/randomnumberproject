@@ -1,4 +1,3 @@
-import numpy as np
 from flask import request, render_template
 from application import app
 import requests
