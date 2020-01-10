@@ -1,5 +1,6 @@
 from flask import render_template, request, session
 from application import app
+from application.models import User
 import requests
 import os
 
@@ -23,3 +24,8 @@ def login():
 def register():
     return render_template('register.html', title='Register')
 
+@app.route('/users')
+def users():
+    postData = User.query.all()
+    print(post.first_name)
+    return render_template('users.html', title='Users', users=postData)

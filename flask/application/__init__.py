@@ -10,7 +10,7 @@ app = Flask(__name__)
 sql_user = getenv('MYSQL_USER')
 sql_pass = getenv('MYSQL_PASSWORD')
 sql_url = getenv('MYSQL_HOST')
-sql_db = getenv('MYSQL_DB')
+sql_db = getenv('MYSQL_DATAB')
 sql_key = getenv('YOUR_SECRET_KEY')
 #Connect to the database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://' + sql_user + ':' + sql_pass + '@' + sql_url + '/' + sql_db
