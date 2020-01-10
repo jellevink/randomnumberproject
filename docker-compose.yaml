@@ -13,15 +13,27 @@ services:
   random1:
     container_name: random1
     build: ./random1
+    ports:
+    - target: 5001
+      published: 5001
   random2:
     container_name: random2
     build: ./random2
+    ports:
+    - target: 5002
+      published: 5002
   combine:
     container_name: combine
     build: ./combine
+    ports:
+    - target: 5003
+      published: 5003
   flask:
     container_name: flask
     build: ./flask
+    ports:
+    - target: 5000
+      published: 5000
     environment:
     - MYSQL_USER=${MYSQL_USER}
     - MYSQL_PASSWORD=${MYSQL_PASSWORD}
