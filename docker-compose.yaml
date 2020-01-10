@@ -2,7 +2,7 @@ version: '3.7'
 services:
   nginx:
     container_name: nginx
-    image: nginx:alpine
+    image: nginx:lts-alpine
     volumes:
     - type: bind
       source: ./nginx/nginx.conf
@@ -11,7 +11,7 @@ services:
     - target: 80
       published: 80
   random1:
-    image: project_changed:5000/random1:build-${BUILD_NUMBER}
+    image: 10.154.0.43:5000/random1:build-${BUILD_NUMBER}
     container_name: random1
     build: ./random1
     ports:
@@ -19,21 +19,21 @@ services:
       published: 5001
   random2:
     container_name: random2
-    image: project_changed:5000/random2:build-${BUILD_NUMBER}
+    image: 10.154.0.43:5000/random2:build-${BUILD_NUMBER}
     build: ./random2
     ports:
     - target: 5002
       published: 5002
   combine:
     container_name: combine
-    image: project_changed:5000/combine:build-${BUILD_NUMBER}
+    image: 10.154.0.43:5000/combine:build-${BUILD_NUMBER}
     build: ./combine
     ports:
     - target: 5003
       published: 5003
   flask:
     container_name: flask
-    image: project_changed:5000/flask:build-${BUILD_NUMBER}
+    image: 10.154.0.43:5000/flask:build-${BUILD_NUMBER}
     build: ./flask
     ports:
     - target: 5000
