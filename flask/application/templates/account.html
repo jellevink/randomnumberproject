@@ -1,41 +1,42 @@
 {% extends "layout.html" %}
-
 {% block body_content %}
-        <p>Please login to this app in order to log your Pokemon</p>
-        <p>If you do not yet have an account, please register first</p>
+        <h1>{{ current_user.first_name }} {{ current_user.last_name}} Account Page</h1>
+        <p>Update your account details by entering new details below!</p>
         <div class="form">
                 <form method="POST" action="">
                         {{ form.hidden_tag() }}
                         <div class="form-group">
+                                {{ form.username.label }}
+                                {% if form.username.errors %}
+                                        {{ form.username }}
+                                        <div class="error">
+                                                {% for error in form.username.errors %}
+                                                        <span>{{ error }}</span>
+                                                {% endfor %}
+                                        </div>
+                                {% else %}
+                                        {{ form.username }}
+                                {% endif %}
+                        </div>
+                        <br>
+                        <div class="form-group">
                                 {{ form.email.label }}
-                                {{ form.email }}
                                 {% if form.email.errors %}
+                                        {{ form.email }}
                                         <div class="error">
                                                 {% for error in form.email.errors %}
                                                         <span>{{ error }}</span>
                                                 {% endfor %}
                                         </div>
+                                {% else %}
+                                        {{ form.email }}
                                 {% endif %}
-                        </div>
-                        <div class="form-group">
-                                {{ form.password.label }}
-                                {{ form.password }}
-                                {% if form.password.errors %}
-                                        <div class="error">
-                                                {% for error in form.password.errors %}
-                                                        <span>{{ error }}</span>
-                                                {% endfor %}
-                                        </div>
-                                {% endif %}
-                        </div>
-                        <div class="form-group">
-                                {{ form.remember.label }}
-                                {{ form.remember }}
-                        </div>
+                        </div><br>
                         <div class="form-group">
                                 {{ form.submit }}
                         </div>
                 </form>
         </div>
-{% endblock body_content%}
+<br>
+{% endblock body_content %}
 
