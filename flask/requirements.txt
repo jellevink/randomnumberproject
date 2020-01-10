@@ -19,3 +19,4 @@ WTForms==2.2.1
 flask_testing
 pytest
 pytest-cov
+requests
