@@ -4,5 +4,11 @@ COPY requirements.txt /app/requirements.txt
 RUN pip3 install -r requirements.txt
 ENTRYPOINT ["usr/local/bin/python3", "app.py"]
 COPY . .
-~
+
+ENV MYSQL_USER=${MYSQL_USER}
+ENV MYSQL_PASSWORD=${MYSQL_PASSWORD}
+ENV MYSQL_HOST=${MYSQL_HOST}
+ENV MYSQL_DATAB=${MYSQL_DATAB}
+#ENV MYSQL_DB_TEST=${MYSQL_DB_TEST}
+ENV YOUR_SECRET_KEY=${YOUR_SECRET_KEY}
 
