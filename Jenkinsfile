@@ -8,6 +8,8 @@ pipeline{
 				      pwd
 				      ls
 				      docker-compose build
+				      docker ps -a
+				      docker service ls
 				      docker-compose push
 				      '''
 			}
