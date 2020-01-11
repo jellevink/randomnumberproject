@@ -15,7 +15,7 @@ def combine():
     print(random_number2)
     #randoms = str(int(random_number1)+int(random_number2))
     #print(randoms)
-    if dummyvariable=1:         
+    if dummyvariable == 1:         
         if random_number1 % 3 == 0:
             if random_number2 == 1:
                 prize = 10000
@@ -39,7 +39,7 @@ def combine():
                 prize = 100000
         else:
             prize = "tee"
-    else: 
+    if dummyvariable == 2: 
         prize = "whizbang"
     print(prize)
     return str(prize)
