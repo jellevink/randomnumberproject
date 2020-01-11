@@ -16,25 +16,25 @@ def combine():
     #print(randoms)
     if random_number1 % 3 == 0:
         if random_number2 == 1:
-            prize = 100
+            prize = 10000
         if random_number2 == 2:
-            prize = 200
+            prize = 20000
         if random_number2 == 3:
-            prize = 300
+            prize = 30000
         if random_number2 == 4:
-            prize = 400
+            prize = 40000
         if random_number2 == 5:
-            prize = 500
+            prize = 50000
         if random_number2 == 6:
-            prize = 600
+            prize = 60000
         if random_number2 == 7:
-            prize = 700
+            prize = 70000
         if random_number2 == 8:
-            prize = 800
+            prize = 80000
         if random_number2 == 9:
-            prize = 900
+            prize = 90000
         if random_number2 == 10:
-            prize = 1000
+            prize = 100000
     else:
         prize = 0
     print(prize)
