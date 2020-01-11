@@ -36,7 +36,7 @@ def combine():
         if random_number2 == 10:
             prize = 100000
     else:
-        prize = 0
+        prize = "tee"
     print(prize)
     return str(prize)
 
