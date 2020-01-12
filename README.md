@@ -46,11 +46,17 @@ This application is designed to allow users to log in and randomly generate a an
 
 Below are entailed a series of user stories for how the app may be used and their level of requirement according to a MoSCoW (Must, Shoud, Could, Would) scale.
 
+|  | User Stories and their MoSCoW |
+| ------ | ------ |
+| MUST | As a user, I want to be able to log in to the app so that I can use the app |
+| MUST | As a user, I want to be able to generate random exercises so that I can work out |
+| SHOULD | As a user, I want to be able to edit my account details so that my details can stay up to date when they change |
+| SHOULD | As a user, I want to be able to delete my account so that my details are no longer stored when I do not wish them to be |
+| COULD | As a user, I want to be able to change the difficulty of the exercises so that I can workout better when I want to |
 
-
-|  | User Stories and their MoSCoW | | |
-| ------ | ------ | ------ | ------ |
-| MUST | As a trainer, I want to be able to add pokemon to my database so that I know what they are | one | two |
+| Risk | Impact | Likelihood | Response | Threat after response |
+| ------ | ------ | ------ | ------ | ------ |
+| Lack of clear objectives | High: poor planning often leads to project failing | Medium: New to programming and difficult to structure project while still learning | Trello board used to identify aims and plan the project | Lack of understanding of project led to not finishing everything I had wanted to |
 | MUST | As a trainer, I want to be able to add pokemon moves so that I know what moves are available and what their power is | | |
 | MUST | As a trainer, I want to be able to view the pokemon and their movesets that I have entered | | |
 | SHOULD | As a trainer, I want to be able to create a team out of the pokemon in the database so that I can use a preset team in gameplay | | |
