@@ -20,3 +20,4 @@ flask_testing
 pytest
 pytest-cov
 requests
+coverage==5.0.1
