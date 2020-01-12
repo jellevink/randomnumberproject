@@ -42,7 +42,7 @@ The project brief listed a number of goals to achieve, these are as follows:
 <a name="solution"></a>
 ### Solution
 
-This application is designed to allow users to log recently caught pokemon and their attributes (ie movesets) with the intention of using these pokemon to form teams. 
+This application is designed to allow users to log in and randomly generate a an exercise and number of reps for when they do not know how best to workout. A second implementation is available for when user wish to increase the difficult of the exercises, although currently this is only modifiable through the app; ideally this would be editable by a user. 
 
 Below are entailed a series of user stories for how the app may be used and their level of requirement according to a MoSCoW (Must, Shoud, Could, Would) scale.
 
@@ -73,7 +73,7 @@ Below are entailed a series of user stories for how the app may be used and thei
 #### Initial plan
 ![Initial ERD](/Documentation/ERD_Initial.jpeg)
 
-The initial plan for the project, reflected in the ERD above, consisted of a lot more tables and entities than were produced in the final application. Given the time constraints and technical capability issues, I decided to narrow the range of the scope of the project and so started with a MVP (Minimum Viable Product), which has been created and so I only managed to deliver two tables plus a join, as shown below. 
+The application is connected to a GCP hosted mySQL server which stores a users details and allows for users to register to and login to the application. In future versions, this could also store completed exercises. Below is shown the ERD of the users table. 
 
 #### Delivered solution
 ![Final ERD](/Documentation/ERD_Final.jpeg)
@@ -96,7 +96,9 @@ An instance on the GCP cloud platform containing a mySQL instance hosted the dat
 * Python - Programming
 * Flask - Web microframework
 * Jenkins - CI Server
+* Docker Swarm - Containerisation
 * Pytest - Unit Testing
+* Ansible Playbooks - Build Environments
 
 <a name="testing"></a>
 ## Testing
