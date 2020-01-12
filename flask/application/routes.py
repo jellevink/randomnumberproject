@@ -6,8 +6,8 @@ from flask_login import login_user, current_user, logout_user, login_required
 import requests
 import os
 
-@app.route('/')
 @app.route('/home', methods=['GET', 'POST'])
+@login_required
 def home():
     response=requests.get('http://combine:5003').text
     print(response)
@@ -34,9 +34,9 @@ def register():
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
-
+@app.route('/')
 @app.route('/about')
-@login_required
+
 def about():
     return render_template('home.html', title='About')
 
