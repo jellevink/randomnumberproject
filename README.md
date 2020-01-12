@@ -92,12 +92,13 @@ An instance on the GCP cloud platform containing a mySQL instance hosted the dat
 <a name="tech"></a>
 ### Technologies Used
 
+This project has made use of numerous skills and technologies used that have been taught at the QA Consulting Academy, the technologies used within this project include: 
 * Google Cloud Platform VMs
-* mySQL Instance on VCP - Database
+* mySQL Instance on GCP - Database
 * Python - Programming
 * Flask - Web microframework
 * Jenkins - CI Server
-* Docker Swarm - Containerisation
+* Docker (Swarm and Compose) - Containerisation
 * Pytest - Unit Testing
 * Ansible Playbooks - Build Environments
 
