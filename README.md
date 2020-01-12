@@ -28,6 +28,14 @@ Website:  <br/>
 <a name="brief"></a>
 ## Project Brief
 The project brief listed a number of goals to achieve, these are as follows:
+* Plan the project using a Kanban board, including any risks and issues encountered
+* An integrated VCS that can be built through a CI server and deployed to a cloud-based VM, making use of web-hooks to achieve this. 
+* Service-oriented architecture using Python Flask
+   * This should consist of four services: Two which generate random objects, one which combines said random objects and a fourth to host the Flask application
+   * An SQL database should be used to store some information
+   * Different implementation of the project must be able to be switched between without website downtime
+* Containerisation of each service with Docker
+* Ansible playbook to provision the environments that the application needs to run
 
 
 
