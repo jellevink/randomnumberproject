@@ -57,15 +57,10 @@ Below are entailed a series of user stories for how the app may be used and thei
 | Risk | Impact | Likelihood | Response | Threat after response |
 | ------ | ------ | ------ | ------ | ------ |
 | Lack of clear objectives | High: poor planning often leads to project failing | Medium: New to programming and difficult to structure project while still learning | Trello board used to identify aims and plan the project | Lack of understanding of project led to not finishing everything I had wanted to |
-| MUST | As a trainer, I want to be able to add pokemon moves so that I know what moves are available and what their power is | | |
-| MUST | As a trainer, I want to be able to view the pokemon and their movesets that I have entered | | |
-| SHOULD | As a trainer, I want to be able to create a team out of the pokemon in the database so that I can use a preset team in gameplay | | |
-| SHOULD | As a trainer, I want to be able to create multiple teams out of the pokemon in the database so that I can create teams for gameplay | | |
-| SHOULD | As a trainer, I want to be able to delete teams when I no longer need them so that my team list does not become too cluttered | | |
-| SHOULD | As a trainer, I want to see the pokemon in the my team so that I know what that team is good for | | |
-| COULD | As a trainer, I want to see the movesets and damage of the pokemon in my team so that I can better see what my team is good for | | |
-| COULD | As a trainer, I want to be able to see the theme (typing) of my teams so that I can easily select one for gameplay | | |
-| COULD | As a user, I want to use an app that looks nice so that I can enjoy using it | | |
+| Problems with building the project | High: this is the focus of the project and so not building it will result in a poor project | Medium: new to programming so there is a good chance that I will run into issues | Dealing with issues as and when they occur and by trying to follow my plan as closely as possible | Some problems occured, but most very solvable |
+| Issues with implementing the DevOps materials (Jenkins, Ansible, Git, Docker) | High: this is another crucial part of the project and so implementing them will result in a poor project | Medium: new to programming and have not had much experience with these materials | Ensuring that I understand the materials while learning about them will avoid most issues | Have had some, but not many issues, and most issues I have been able to solve, especially with the help of the trainers |
+| Issues with implementing testing | Medium: while this does not prevent the application from working, it may lead to issues with the app that I have not spotted. This is also a crucial part of the project | Medium: we have never covered integration testing and there may be issues with running testing in parallel with other services| Will rely on manual testing as much as possible and try to keep the application as simple as possible to minimise errors as much as possible| No known issues with the application following manual testing, but have been unable to implement automated testing, possibly due to issues with Docker |
+
 
 <a name="trello"></a>
 ### Trello
