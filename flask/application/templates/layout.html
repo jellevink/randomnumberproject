@@ -2,7 +2,7 @@
 <body>
         <div class="navbar">
                 {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('home') }}">Home</a>
+                        <a href="{{ url_for('home') }}">Exercises</a>
                         <a href="{{ url_for('logout') }}">Logout</a>
                         <a href="{{ url_for('account') }}">Account</a>
                 {% else %}

@@ -2,10 +2,11 @@
 
 {% block body_content %}
         <p>Please login to this app in order to generate exercises!</p>
-        <p>If you do not yet have an account, please register first by clicking here</p>
+        <p>If you do not yet have an account, please register first by clicking here
 	<div class="button">
-		<a href="{{ url_for('register') }}">Register</a>
+		<a href="{{ url_for('register') }}">here</a>
 	</div>
+	</p>
         <div class="form">
                 <form method="POST" action="">
                         {{ form.hidden_tag() }}
