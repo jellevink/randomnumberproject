@@ -1,9 +1,9 @@
-# Pokemon Team Creator
-Application to log pokemon caught and their attributes for the SFIA project due Monday week 6 (9/12/2019) at QAC academy
+# Random Exercise Generator
+This is a simple web application to generate random exercises for a user to complete when they do not know how they should workout. This has been made following the criteria needed for the SFIA project due in on Monday 13 January 2020 at the QA Consulting Academy. This brief will highlight the planning, design, creation, testing and deployment processes used during this project.
 
-Presentation: https://docs.google.com/presentation/d/1tm3JUXxm1hJjnSwjx0A_a75Bs4UwrT1y485jIgPjrs0/edit?usp=sharing  <br/>
-Trello:  https://trello.com/b/g4A72TEz/sfia-project <br/>
-Website: http://34.89.72.242:5000/home
+Presentation:   <br/>
+Trello:   <br/>
+Website:  <br/>
 
 
 ## Index
@@ -26,9 +26,10 @@ Website: http://34.89.72.242:5000/home
 [Authors](#auth)
 
 <a name="brief"></a>
-## The Brief
+## Project Brief
+The project brief listed a number of goals to achieve, these are as follows:
 
-To create a CRUD application with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training.
+
 
 <a name="solution"></a>
 ### Solution
