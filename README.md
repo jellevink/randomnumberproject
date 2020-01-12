@@ -48,18 +48,18 @@ Below are entailed a series of user stories for how the app may be used and thei
 
 
 
-|  | User Stories and their MoSCoW | 
+|  | User Stories and their MoSCoW | |
 | ------ | ------ | ------ | ------ |
 | MUST | As a trainer, I want to be able to add pokemon to my database so that I know what they are | one | two |
-| MUST | As a trainer, I want to be able to add pokemon moves so that I know what moves are available and what their power is |
-| MUST | As a trainer, I want to be able to view the pokemon and their movesets that I have entered |
-| SHOULD | As a trainer, I want to be able to create a team out of the pokemon in the database so that I can use a preset team in gameplay |
-| SHOULD | As a trainer, I want to be able to create multiple teams out of the pokemon in the database so that I can create teams for gameplay |
-| SHOULD | As a trainer, I want to be able to delete teams when I no longer need them so that my team list does not become too cluttered |
-| SHOULD | As a trainer, I want to see the pokemon in the my team so that I know what that team is good for |
-| COULD | As a trainer, I want to see the movesets and damage of the pokemon in my team so that I can better see what my team is good for |
-| COULD | As a trainer, I want to be able to see the theme (typing) of my teams so that I can easily select one for gameplay |
-| COULD | As a user, I want to use an app that looks nice so that I can enjoy using it |
+| MUST | As a trainer, I want to be able to add pokemon moves so that I know what moves are available and what their power is | | |
+| MUST | As a trainer, I want to be able to view the pokemon and their movesets that I have entered | | |
+| SHOULD | As a trainer, I want to be able to create a team out of the pokemon in the database so that I can use a preset team in gameplay | | |
+| SHOULD | As a trainer, I want to be able to create multiple teams out of the pokemon in the database so that I can create teams for gameplay | | |
+| SHOULD | As a trainer, I want to be able to delete teams when I no longer need them so that my team list does not become too cluttered | | |
+| SHOULD | As a trainer, I want to see the pokemon in the my team so that I know what that team is good for | | |
+| COULD | As a trainer, I want to see the movesets and damage of the pokemon in my team so that I can better see what my team is good for | | |
+| COULD | As a trainer, I want to be able to see the theme (typing) of my teams so that I can easily select one for gameplay | | |
+| COULD | As a user, I want to use an app that looks nice so that I can enjoy using it | | |
 
 <a name="trello"></a>
 ### Trello
