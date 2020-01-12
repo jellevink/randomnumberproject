@@ -71,7 +71,7 @@ Below are entailed a series of user stories for how the app may be used and thei
 <a name="erd"></a>
 ### Entity Relationship Diagrams
 #### Initial plan
-![Initial ERD](/Documentation/ERD_Initial.jpeg)
+![Initial ERD](/Documentation/ERD.png)
 
 The application is connected to a GCP hosted mySQL server which stores a users details and allows for users to register to and login to the application. In future versions, this could also store completed exercises. Below is shown the ERD of the users table. 
 
