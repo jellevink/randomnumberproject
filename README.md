@@ -49,8 +49,8 @@ Below are entailed a series of user stories for how the app may be used and thei
 
 
 |  | User Stories and their MoSCoW |
-| ------ | ------ |
-| MUST | As a trainer, I want to be able to add pokemon to my database so that I know what they are |
+| ------ | ------ |------|------|
+| MUST | As a trainer, I want to be able to add pokemon to my database so that I know what they are | one|two|
 | MUST | As a trainer, I want to be able to add pokemon moves so that I know what moves are available and what their power is |
 | MUST | As a trainer, I want to be able to view the pokemon and their movesets that I have entered |
 | SHOULD | As a trainer, I want to be able to create a team out of the pokemon in the database so that I can use a preset team in gameplay |
