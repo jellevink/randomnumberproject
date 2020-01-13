@@ -66,8 +66,11 @@ Below are entailed a series of user stories according to the planned uses for th
 
 Below are shown three user cases for how this app may be used (a user case for registering to the app, logging into and using the app and reloading the app to generate more exercises). The app may of course be used in other ways. 
 
+User Case: Registering an account:
 ![usercase1](/Documentation/usercase1.png)
+User Case: 
 ![usercase2](/Documentation/usercase2.png)
+User Case:
 ![usercase3](/Documentation/usercase3.png)
 
 <a name="trello"></a>
