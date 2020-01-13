@@ -3,7 +3,7 @@ This is a simple web application to generate random exercises for a user to comp
 
 Presentation:   <br/>
 Trello: https://trello.com/b/NbFXSnI8/projecttwee  <br/>
-Website:  <br/>
+Website:  http://34.89.127.153/  <br/>
 
 
 ## Index
@@ -101,6 +101,7 @@ A number of risks have been identified and categorised, complete with how I inte
 ## Architecture
 <a name="backend"></a>
 ### Back-End Architecture
+![Back-end Structure](/Documentation/structure.png)
 
 <a name="erd"></a>
 ### Entity Relationship Diagrams
@@ -181,7 +182,8 @@ Jenkins is an automation tool for continuous integration, making it simpler to i
 ## Testing
 
 Pytest unit testing has been used to test the web app, currently only for being tested for accessing certain pages depending on whether a user is logged in or not. Shown below is a coverage report for the app.
-![Coverage Report](/Documentation/report.png)
+![Coverage Report](/Documentation/testingflaskscreenshot.png)
+![Coverage Report2](/Documentation/testingrandom.png)
 
 <a name="improve"></a>
 ## Improvements for the Future and Difficulties
