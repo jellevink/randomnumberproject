@@ -1,7 +1,7 @@
 # Random Exercise Generator
 This is a simple web application to generate random exercises for a user to complete when they do not know how they should workout. This has been made following the criteria needed for the SFIA project due in on Monday 13 January 2020 at the QA Consulting Academy. This brief will highlight the planning, design, creation, testing and deployment processes used during this project.
 
-Presentation:   <br/>
+Presentation: https://docs.google.com/presentation/d/1tm3JUXxm1hJjnSwjx0A_a75Bs4UwrT1y485jIgPjrs0/edit#slide=id.p  <br/>
 Trello: https://trello.com/b/NbFXSnI8/projecttwee  <br/>
 Website:  http://34.89.127.153/  <br/>
 
@@ -102,14 +102,18 @@ A number of risks have been identified and categorised, complete with how I inte
 ## Architecture
 <a name="backend"></a>
 ### Back-End Architecture
+
+The application consists of four services working together. Two services (random1 and random2) generate a random number between 1 and 10 inclusive. These are accessed by a GET request by a service (combine) which combines the numbers such that one randomly generated number refers to the number of reps to complete (after a mathematical operation has been applied to it) and the other randomly generated number refers to the exercise to be completed. In a second implemtation of this service, the number of reps is increased. This is accessed by another GET request by a fourth service (flask) which generates the front-end of the application. An nginx container acts as a proxy pass to direct traffic to the application. These are all held within a Docker network. The structure is shown below. 
+
 ![Back-end Structure](/Documentation/structure.png)
 
 <a name="erd"></a>
 ### Entity Relationship Diagrams
 #### Initial plan
-![Initial ERD](/Documentation/ERD.png)
 
 The application is connected to a GCP hosted mySQL server which stores a users details and allows for users to register to and login to the application. In future versions, this could also store completed exercises. Below is shown the ERD of the users table. 
+
+![Initial ERD](/Documentation/ERD.png)
 
 <a name="install"></a>
 ## Installation Guide
