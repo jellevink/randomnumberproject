@@ -4,5 +4,5 @@ COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 ENTRYPOINT ["python3", "app.py"]
 COPY . .
-RUN pytest --cov ./application/
+#RUN pytest --cov ./application/
 
