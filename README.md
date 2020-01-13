@@ -162,9 +162,8 @@ Ansible is a simple IT automation tool used (here) for the generation of ready-t
 
 * # Docker
 Docker is a series of PaaS 'Platform as a Service' tools that use OS-level virtualization to package services in 'containers', which can be stored as images, allowing for the product stored within the images to be run on an system thanks to everything they need to run being stored within the Docker container.
-
 	* # Docker Compose
-	Docker Compose is a tool that builds upon the Docker tool and allows for defining and simultaneous running of multiple Docker containers, using a YAML file to configure the services needed. Docker Compose has been used in this project to build the images of each service.
+Docker Compose is a tool that builds upon the Docker tool and allows for defining and simultaneous running of multiple Docker containers, using a YAML file to configure the services needed. Docker Compose has been used in this project to build the images of each service.
 
 
 <a name="testing"></a>
