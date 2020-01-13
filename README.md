@@ -112,14 +112,27 @@ The application is connected to a GCP hosted mySQL server which stores a users d
 * Create a mySQL instance in GCP and follow the GCP tutorial to allow access to it from the qaproject2 VM.
 * Install Ansible onto your local machine, an installation guide can be found here: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 * Install this repo (https://github.com/jellevink/playbooks.git) with the 'git clone' command.
-* Edit the ansible inventory to include the correct usernames/IPs for your accounts and using the 'ansible-playbook' command, install the needed environments contained with the playbooks onto your VMs.
+* Add the public keys from your two VMs into the ansible_id_rsa.pub file within the .ssh folder on your local machine.
+* Edit the ansible inventory to include the correct usernames/IPs for your accounts and using the 'ansible-playbook' command, install the needed environments contained with the playbooks onto your VMs. Retrieve the Jenkins Initial Admin Password from the 'Jenkins Install Task' once ansible has run.
 * On your qaproject2 VM, navigate to ~/.bashrc and add the following environment variables, adding those of your mySQL instance:
 	* MYSQL_USER={your mySQL instance user}
 	* MYSQL_PASSWORD={your mySQL instance user password}
 	* MYSQL_HOST={your mySQL instance IP address}
 	* MYSQL_DB={your mySQL instance database name}
 	* YOUR_SECRET_KEY={any random string}
-* Clone this repo (git clone )
+* Clone this repo (git clone https://github.com/jellevink/randomnumberproject.git) onto your VM.
+* Save this as your own project and GitHub and save the link as this will be needed later.
+* Navigate to the settings of this GitHub repo, select 'Webhooks' and add a webhook. The payload url should be added as follows: http://{ip of qaproject2jenkins}:8080/github-webhook/ and set 'content type' to 'application/json' and save!
+* Open port 5000 on the qaproject2 VM and port 8080 on the qaproject2jenkins VM.
+* Navigate to port 8080 of the qaproject2jenkins VM in the web browser and insert the Jenkins Initial Admin Password when prompted, install the recommened plugins and create an account. 
+* Create a new Pipeline job and select the following options in the configuration:
+	* 'Discard old builds'
+	* 'GitHub project' and insert te link of your new repo
+	* 'GitHub hook trigger for GitScm polling', select 'Git' in the 'SCM' option and add your repo link.
+	* Press Save 
+* To deploy the web application, select the 'Build Now' option on the left hand side of the Jenkins window, or make a commit to your new GitHub repo to activate the webhook. 
+* Navigate to the public IP of your qaproject2 VM and add ':5000' to access the correct port. 
+* Congratulations, you are now on the web app!!!!
 
 
 <a name="depl"></a>
