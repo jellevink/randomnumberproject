@@ -85,6 +85,7 @@ User Case: Using the app to view exercises:
 ### Risk Assessment
 
 A number of risks have been identified and categorised, complete with how I intend to minimise the likelihood of them occuring and the risk they pose. These risks may take the form of both technical risks and risks involved with executing projects in general. 
+
 | Risk | Impact | Likelihood | Response | Threat after response |
 | ------ | ------ | ------ | ------ | ------ |
 | Lack of clear objectives | High: poor planning often leads to project failing | Medium: New to programming and difficult to structure project while still learning | Trello board used to identify aims and plan the project | Lack of understanding of project led to not finishing everything I had wanted to | 
