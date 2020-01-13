@@ -194,13 +194,13 @@ Pytest unit testing has been used to test the web app. The services for the rand
 <a name="improve"></a>
 ## Improvements for the Future and Difficulties
 
-Despite numerous warnings about the dangers of being overly ambitious, my initial ERD and goals were overly ambitious and meant that a lot of time was wasted on creating pages and forms that would never be used. More time was spent trying to figure out how to technicially create something similar to what my goal was. Whilst this time was spent trying to learn a technology and cannot be considered as time wasted (given that I definetely learnt from it), it is still time that ate into what I was able to do for this project. In the future I will try to ensure that I create a plan with an easily scalable solution; an MVP that can easily be changed into a more interesting product should time allow for it. In any case, simplicity is not my enemy and I should try to embrace it and use it as a stepping stone.
+Overall, I am fairly happy with how the project has been completed. The main difficulties faced during the development stage were due to a lack of knowledge of the tools being used, but the act of completing this project has helped hugely with this. 
 <br/>
 &nbsp;
-Due to this, I would say that the majority of the improvements that this app could do with, relate to implementing (firstly learning how to correctly implement) the functions that I was not able to achieve due to time constraints.
-<br/>
-&nbsp;
-A further improvement to this app relates to the visuals of the app. Currently, the app is not interesing to look at or interact with (partially as the scope of this project focused on creating an app that worked, and not an app that looked good), however, a visually appealing product is something that is highly valued in the world at present, so I would work on using CSS and Bootsrtap to create a more visually appealing app.
+This project was fairly simple, so in the future I would like to expand on it, either by adding more services or by adding complexity to the services already created. Additionaly, I would like to add integrated testing as some of the services cannot currently be tested or must be tested when run as a Flask app (without Docker/Jenkins) as this would make the app more stable.
+I would also like to incorporate the exercises into a table (this was intended for this project), so that exercises may be logged against the users that have completed them. Another addition I would like to make (and had planned to include) is to let the user be able to switch the difficulty of the exercises by changing the rolling implementation update manually.
+Finally, I would like to make the project look neater, by incorporating CSS or Bootstrap, as apps that look nicer are more likely to be used more be users.
+
 
 <a name="auth"></a>
 ## Authors
