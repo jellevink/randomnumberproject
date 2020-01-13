@@ -64,13 +64,13 @@ Below are entailed a series of user stories according to the planned uses for th
 <a name="usercases"></a>
 ### User Cases
 
-Below are shown three user cases for how this app may be used (a user case for registering to the app, logging into and using the app and reloading the app to generate more exercises). The app may of course be used in other ways. 
+Below are shown three user cases for how this app may be used (a user case for registering to the app, logging into and updating user details and logging into and reloading the app to generate more exercises). The app may of course be used in other ways. 
 
 User Case: Registering an account:
 ![usercase1](/Documentation/usercase1.png)
-User Case: 
+User Case: Changing the details of an account: 
 ![usercase2](/Documentation/usercase2.png)
-User Case:
+User Case: Using the app to view exercises: 
 ![usercase3](/Documentation/usercase3.png)
 
 <a name="trello"></a>
@@ -101,11 +101,6 @@ A number of risks have been identified and categorised, complete with how I inte
 ![Initial ERD](/Documentation/ERD.png)
 
 The application is connected to a GCP hosted mySQL server which stores a users details and allows for users to register to and login to the application. In future versions, this could also store completed exercises. Below is shown the ERD of the users table. 
-
-#### Delivered solution
-![Final ERD](/Documentation/ERD_Final.jpeg)
-
-As shown in this ERD, the focus of the initial tables has been altered slightly to remove the team and move set additions. Simply due to time constraints and techinical limitations, I started to create the app more simply, with the intention of expanding it once the MVP was done. However, the MVP was only just completed in time (and with issues!) and so none of the stretch goals (the Could and Should of the MoSCow table) have been achieved.
 
 
 <a name="depl"></a>
