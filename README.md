@@ -2,7 +2,7 @@
 This is a simple web application to generate random exercises for a user to complete when they do not know how they should workout. This has been made following the criteria needed for the SFIA project due in on Monday 13 January 2020 at the QA Consulting Academy. This brief will highlight the planning, design, creation, testing and deployment processes used during this project.
 
 Presentation:   <br/>
-Trello:   <br/>
+Trello: https://trello.com/b/NbFXSnI8/projecttwee  <br/>
 Website:  <br/>
 
 
@@ -78,9 +78,8 @@ User Case: Using the app to view exercises:
 
 <a name="trello"></a>
 ### Trello
-
+Trello has been used as a tool for planning the project, both before starting and during the project to update what I believed needed to be done, shown below are screenshots of the Trello board towards the end of the project, a link to the Trello board can be found at the top of this document. 
 ![Trello1](/Documentation/trello1.png)
-![Trello2](/Documentation/trello2.png)
 
 <a name="risk"></a>
 ### Risk Assessment
