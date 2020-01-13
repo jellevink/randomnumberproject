@@ -157,19 +157,24 @@ This project has made use of numerous skills and technologies used that have bee
 * Pytest - Unit Testing
 * Ansible Playbooks - Build Environments
 
-# Ansible
+### Ansible
 Ansible is a simple IT automation tool used (here) for the generation of ready-to-use environments for projects to be deployed on; installing  and configuring any tools needed on each machine in a system. In this project, a local machine was used to run Ansible, and Ansible installed tools on 2 VMs. 
 
-# Docker
+### Git
+Git is a version-control system used for tracking changes within a project during the software development process. Git has been used via the GitHub client for keeping the project backed up and for tracking changes to it.
+
+### Docker
 Docker is a series of PaaS 'Platform as a Service' tools that use OS-level virtualization to package services in 'containers', which can be stored as images, allowing for the product stored within the images to be run on an system thanks to everything they need to run being stored within the Docker container.
 
-# Docker Compose
+### Docker Compose
 Docker Compose is a tool that builds upon the Docker tool and allows for defining and simultaneous running of multiple Docker containers, using a YAML file to configure the services needed. Docker Compose has been used in this project to build the images of each service.
 
-# Docker Swarm
+### Docker Swarm
 Docker Swarm refers to a collection of machines all running the same Docker application that have been configured to run in a group; run by a node known as a Swarm Mananger who controls a series of nodes known as Swarm Workers. This allows for multiple users to be using version of the same services, instead of sharing it. Due to this, if one replica fails, others will immediately pick up the slack and prevent system downtime. Additionaly, this means that updates to the application will be smooth and will not affect the user experience of the app. In this project, the main application is run on a Swarm Manager, and no Swarm Workers have been set up. 3 replicas of each service have been created. 
 
-# Jenkins
+### Jenkins
+Jenkins is an automation tool for continuous integration, making it simpler to integrate changes to projects seamlessly and deliver the latest version of the project to users. In this project, a pipeline project was used to make it easier to break the deployment process down into stages and see where errors in the build may be occuring, a screenshot of the pipeline process is shown below. 
+![Jenkins](/Documentation/jenkins.png)
 
 
 <a name="testing"></a>
