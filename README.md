@@ -79,6 +79,7 @@ User Case: Using the app to view exercises:
 
 <a name="trello"></a>
 ### Trello
+
 Trello has been used as a tool for planning the project, both before starting and during the project to update what I believed needed to be done, shown below are screenshots of the Trello board towards the end of the project, a link to the Trello board can be found at the top of this document. 
 ![Trello1](/Documentation/trello1.png)
 
