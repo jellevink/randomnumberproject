@@ -9,7 +9,10 @@ Website:  <br/>
 ## Index
 [Brief](#brief)
    * [Solution](#solution)
+   * [User Stories](#userstories)
+   * [User Cases](#usercases)
    * [Trello](#trello)
+   * [Risk Assessment](#risk)
    
 [Architecture](#architecture)
    * [Entity Relationship Diagrams](#erd)
@@ -44,7 +47,10 @@ The project brief listed a number of goals to achieve, these are as follows:
 
 This application is designed to allow users to log in and randomly generate a an exercise and number of reps for when they do not know how best to workout. A second implementation is available for when user wish to increase the difficult of the exercises, although currently this is only modifiable through the app; ideally this would be editable by a user. 
 
-Below are entailed a series of user stories for how the app may be used and their level of requirement according to a MoSCoW (Must, Shoud, Could, Would) scale.
+<a name="userstories"></a>
+### User Stories
+
+Below are entailed a series of user stories according to the planned uses for the application and their level of requirement according to a MoSCoW (Must, Shoud, Could, Would) scale. Note that some of these were considered 'stretch goals' and so have not been completed, although may be completed in the future, so please check in later to see if some of these exciting features have been added!
 
 |  | User Stories and their MoSCoW |
 | ------ | ------ |
@@ -54,18 +60,31 @@ Below are entailed a series of user stories for how the app may be used and thei
 | SHOULD | As a user, I want to be able to delete my account so that my details are no longer stored when I do not wish them to be |
 | COULD | As a user, I want to be able to change the difficulty of the exercises so that I can workout better when I want to |
 
+
+<a name="usercases"></a>
+### User Cases
+
+Below are shown three user cases for how this app may be used (a user case for registering to the app, logging into and using the app and reloading the app to generate more exercises). The app may of course be used in other ways. 
+
+![usercase1](/Documentation/usercase1.png)
+![usercase2](/Documentation/usercase2.png)
+![usercase3](/Documentation/usercase3.png)
+
+<a name="trello"></a>
+### Trello
+
+![Trello1](/Documentation/trello1.png)
+![Trello2](/Documentation/trello2.png)
+
+<a name="risk"></a>
+### Risk Assessment
+
 | Risk | Impact | Likelihood | Response | Threat after response |
 | ------ | ------ | ------ | ------ | ------ |
 | Lack of clear objectives | High: poor planning often leads to project failing | Medium: New to programming and difficult to structure project while still learning | Trello board used to identify aims and plan the project | Lack of understanding of project led to not finishing everything I had wanted to |
 | Problems with building the project | High: this is the focus of the project and so not building it will result in a poor project | Medium: new to programming so there is a good chance that I will run into issues | Dealing with issues as and when they occur and by trying to follow my plan as closely as possible | Some problems occured, but most very solvable |
 | Issues with implementing the DevOps materials (Jenkins, Ansible, Git, Docker) | High: this is another crucial part of the project and so implementing them will result in a poor project | Medium: new to programming and have not had much experience with these materials | Ensuring that I understand the materials while learning about them will avoid most issues | Have had some, but not many issues, and most issues I have been able to solve, especially with the help of the trainers |
 | Issues with implementing testing | Medium: while this does not prevent the application from working, it may lead to issues with the app that I have not spotted. This is also a crucial part of the project | Medium: we have never covered integration testing and there may be issues with running testing in parallel with other services| Will rely on manual testing as much as possible and try to keep the application as simple as possible to minimise errors as much as possible| No known issues with the application following manual testing, but have been unable to implement automated testing, possibly due to issues with Docker |
-
-![usercase1](/Documentation/usercase1.png)
-<a name="trello"></a>
-### Trello
-![Trello1](/Documentation/trello1.png)
-![Trello2](/Documentation/trello2.png)
 
 <a name="architecture"></a>
 ## Architecture
