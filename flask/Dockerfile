@@ -12,4 +12,4 @@ ENV MYSQL_DATAB=${MYSQL_DATAB}
 ENV MYSQL_DB_TEST=${MYSQL_DB_TEST}
 ENV YOUR_SECRET_KEY=${YOUR_SECRET_KEY}
 
-RUN pytest --cov ./application/
+#RUN pytest --cov ./application/
