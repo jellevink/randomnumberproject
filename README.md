@@ -149,7 +149,7 @@ The application is connected to a GCP hosted mySQL server which stores a users d
 
 A CI pipeline was involved in the development and deployment of the project, a mock-up of this can be seen below. 
 
-![Deployment Pipeline](/Documentation/CI_Pipeline.jpeg)
+![Deployment Pipeline](/Documentation/pipeline.png)
 <a name="tech"></a>
 ### Technologies Used
 
@@ -186,9 +186,10 @@ Jenkins is an automation tool for continuous integration, making it simpler to i
 <a name="testing"></a>
 ## Testing
 
-Pytest unit testing has been used to test the web app, currently only for being tested for accessing certain pages depending on whether a user is logged in or not. Shown below is a coverage report for the app.
+Pytest unit testing has been used to test the web app. The services for the random number generators are very simple and therefore testing is also very simple, so having a large coverage (100%) is no surprise! The testing for the front-end service was satisfactory (57% coverage) given that that integration testing was not used and only unit testing was applied. The combination service was not able to be tested as it required inputs from the random number generation services and thus needs integration testing, which we have not covered. The testing has been run through Docker too, but removed (by editing out the command) as some errors occur and to reduce time of the Jenkins pipeline build. 
 ![Coverage Report](/Documentation/testingflaskscreenshot.png)
 ![Coverage Report2](/Documentation/testingrandom.png)
+![Coverage Report3](/Documentation/testingrandom2.png)
 
 <a name="improve"></a>
 ## Improvements for the Future and Difficulties
