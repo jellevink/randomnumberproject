@@ -10,7 +10,7 @@ import string
 def combine():
     random_number1 = int(requests.get('http://random1:5001').text)
     random_number2 = int(requests.get('http://random2:5002').text)
-    dummyvariable = 1
+    dummyvariable = 2
     print(random_number1)
     print(random_number2)
     #randoms = str(int(random_number1)+int(random_number2))
@@ -58,25 +58,25 @@ def combine():
             mid2 = 30
     if dummyvariable == 2: 
         if random_number2 == 1:
-            mid2 = 40
+            mid2 = 40000000
         if random_number2 == 2:
-            mid2 = 50
+            mid2 = 50000000
         if random_number2 == 3:
-            mid2 = 60
+            mid2 = 60000000
         if random_number2 == 4:
-            mid2 = 80
+            mid2 = 80000000
         if random_number2 == 5:
-            mid2 = 100
+            mid2 = 100000000
         if random_number2 == 6:
-            mid2 = 120
+            mid2 = 120000000
         if random_number2 == 7:
-            mid2 = 150
+            mid2 = 1500000000
         if random_number2 == 8:
-            mid2 = 200
+            mid2 = 200000000
         if random_number2 == 9:
-            mid2 = 250
+            mid2 = 250000000
         if random_number2 == 10:
-            mid2 = 300
+            mid2 = 300000000
     prize = "Today, you should do " + str(mid2) + " " + mid + "!!!"
     print(prize)
     return str(prize)
