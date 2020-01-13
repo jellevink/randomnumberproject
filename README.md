@@ -141,8 +141,7 @@ The application is connected to a GCP hosted mySQL server which stores a users d
 <a name="depl"></a>
 ## Deployment
 
-A webhook linked to the GitHub feature branch (can also be linked to the master branch if desired) allows for the continouos building and deployment of the web app through a Jenkins server (hosted on a GCP instance), which is triggered whenever an update is pushed to GitHub.
-An instance on the GCP cloud platform containing a mySQL instance hosted the database and was linked to another GCP instance hosting the Flask application. 
+A CI pipeline was involved in the development and deployment of the project, a mock-up of this can be seen below. 
 
 ![Deployment Pipeline](/Documentation/CI_Pipeline.jpeg)
 <a name="tech"></a>
@@ -157,6 +156,13 @@ This project has made use of numerous skills and technologies used that have bee
 * Docker (Swarm and Compose) - Containerisation
 * Pytest - Unit Testing
 * Ansible Playbooks - Build Environments
+
+* # Ansible
+Ansible is a simple IT automation tool used (here) for the generation of ready-to-use environments for projects to be deployed on; installing  and configuring any tools needed on each machine in a system. In this project, a local machine was used to run Ansible, and Ansible installed tools on 2 VMs. 
+
+* # Docker
+Docker is a series of PaaS 'Platform as a Service' tools that use OS-level virtualization to package services in 'containers', which can be stored as images, allowing for the product stored within the images to be run on an system thanks to everything they need to run being stored within the Docker container.
+
 
 <a name="testing"></a>
 ## Testing
