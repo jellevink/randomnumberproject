@@ -74,7 +74,7 @@ class testapp(TestBase):
         self.assertEqual(response.status_code, 302)
         self.assertRedirects(response, redirect_url)
     # Tests that a user can register to the app by adding themselves to the users database
-    def test_user-Table(self):
+    def test_user_Table(self):
         user = User(first_name="test", last_name="test2", email="testemail@gmail.com", password="testpassword")
         db.session.add(user)
         db.session.commit
