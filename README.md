@@ -68,8 +68,10 @@ Below are shown three user cases for how this app may be used (a user case for r
 
 User Case: Registering an account:
 ![usercase1](/Documentation/usercase1.png)
+
 User Case: Changing the details of an account: 
 ![usercase2](/Documentation/usercase2.png)
+
 User Case: Using the app to view exercises: 
 ![usercase3](/Documentation/usercase3.png)
 
