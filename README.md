@@ -17,7 +17,8 @@ Website:  <br/>
 [Architecture](#architecture)
    * [Entity Relationship Diagrams](#erd)
 	
-    
+[Installation Guide](#install)
+
 [Deployment](#depl)
    * [Technologies Used](#tech)
    
@@ -104,6 +105,21 @@ A number of risks have been identified and categorised, complete with how I inte
 ![Initial ERD](/Documentation/ERD.png)
 
 The application is connected to a GCP hosted mySQL server which stores a users details and allows for users to register to and login to the application. In future versions, this could also store completed exercises. Below is shown the ERD of the users table. 
+
+<a name="install"></a>
+## Installation Guide
+* Create two GCP instances (In this project, they are called qaproject2 and qaproject2jenkins, but you may change these names, just remember to change the names in the inventory of the ansible-playbooks). These should be running Ubuntu 18.04 LTS if possible.
+* Create a mySQL instance in GCP and follow the GCP tutorial to allow access to it from the qaproject2 VM.
+* Install Ansible onto your local machine, an installation guide can be found here: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+* Install this repo (https://github.com/jellevink/playbooks.git) with the 'git clone' command.
+* Edit the ansible inventory to include the correct usernames/IPs for your accounts and using the 'ansible-playbook' command, install the needed environments contained with the playbooks onto your VMs.
+* On your qaproject2 VM, navigate to ~/.bashrc and add the following environment variables, adding those of your mySQL instance:
+	* MYSQL_USER={your mySQL instance user}
+	* MYSQL_PASSWORD={your mySQL instance user password}
+	* MYSQL_HOST={your mySQL instance IP address}
+	* MYSQL_DB={your mySQL instance database name}
+	* YOUR_SECRET_KEY={any random string}
+* Clone this repo (git clone )
 
 
 <a name="depl"></a>
