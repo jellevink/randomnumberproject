@@ -166,7 +166,7 @@ This project has made use of numerous skills and technologies used that have bee
 * Ansible Playbooks - Build Environments
 
 ### Ansible
-Ansible is a simple IT automation tool used (here) for the generation of ready-to-use environments for projects to be deployed on; installing  and configuring any tools needed on each machine in a system. In this project, a local machine was used to run Ansible, and Ansible installed tools on 2 VMs. The Ansible playbooks used in this project can be seen [here](#ansible).
+Ansible is a simple IT automation tool used (here) for the generation of ready-to-use environments for projects to be deployed on; installing  and configuring any tools needed on each machine in a system. In this project, a local machine was used to run Ansible, and Ansible installed tools on 2 VMs. The Ansible playbooks used in this project can be seen [here](#ansible-playbook).
 
 ### Git
 Git is a version-control system used for tracking changes within a project during the software development process. Git has been used via the GitHub client for keeping the project backed up and for tracking changes to it.
