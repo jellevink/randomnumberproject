@@ -10,6 +10,7 @@ pipeline{
 				      docker-compose build
 				      docker ps -a
 				      docker-compose push
+				      docker ps -a
 				      '''
 			}
 		}
