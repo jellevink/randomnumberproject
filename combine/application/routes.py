@@ -8,8 +8,10 @@ import string
 
 @app.route('/', methods=["GET","POST"])
 def combine():
-    random_number1 = int(requests.get('http://random1:5001').text)
-    random_number2 = int(requests.get('http://random2:5002').text)
+    rn1 = requests.get('http://random1:5001').text
+    rn2 = requests.get('http://random2:5002').text
+    random_number1 = int(rn1)
+    random_number2 = int(rn2)
     dummyvariable = 2
     print(random_number1)
     print(random_number2)
