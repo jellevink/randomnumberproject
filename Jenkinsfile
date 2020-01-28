@@ -16,12 +16,13 @@ pipeline{
 		}
                 stage('--Deploy Docker--'){
                         steps{
-                                sh '''ssh qaproject2  << BOB
+                                sh '''#ssh qaproject2  << BOB
 				      export BUILD_NUMBER="${BUILD_NUMBER}"
-                                      docker service update --replicas 3 --image qaproject2jenkins:5000/random1:build-${BUILD_NUMBER} project_random1
-				      docker service update --replicas 3 --image qaproject2jenkins:5000/random2:build-${BUILD_NUMBER} project_random2
-				      docker service update --replicas 3 --image qaproject2jenkins:5000/combine:build-${BUILD_NUMBER} project_combine
-				      docker service update --replicas 3 --image qaproject2jenkins:5000/flask:build-${BUILD_NUMBER} project_flask
+				      kubectl apply -f k8proj.yaml
+				      #docker service update --replicas 3 --image qaproject2jenkins:5000/random1:build-${BUILD_NUMBER} project_random1
+				      #docker service update --replicas 3 --image qaproject2jenkins:5000/random2:build-${BUILD_NUMBER} project_random2
+				      #docker service update --replicas 3 --image qaproject2jenkins:5000/combine:build-${BUILD_NUMBER} project_combine
+				      #docker service update --replicas 3 --image qaproject2jenkins:5000/flask:build-${BUILD_NUMBER} project_flask
                                       '''
                         }
                 }
