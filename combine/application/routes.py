@@ -81,4 +81,4 @@ def combine():
     print(prize)
     return str(prize)
 
-print(combine())
+#print(combine())
