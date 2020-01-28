@@ -1,0 +1,176 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployrandom1
+  labels: 
+    app: deployrandom1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: deployrandom1
+  template:
+    metadata:
+      labels:
+        app: deployrandom1
+    spec:
+      containers:
+      - name: deployrandom1
+        image: jellevink1/random1:build-
+        ports:
+        - containerPort: 5001
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 5001
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: random1
+spec:
+  selector:
+    app: deployrandom1
+  ports:
+  - protocol: TCP
+    port: 5001
+    targetPort: 5001
+  type: ClusterIP
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployrandom2
+  labels:
+    app: deployrandom2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: deployrandom2
+  template:
+    metadata:
+      labels:
+        app: deployrandom2
+    spec:
+      containers:
+      - name: deployrandom2
+        image: jellevink1/random2:build-
+        ports:
+        - containerPort: 5002
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 5002
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: random2
+spec:
+  selector:
+    app: deployrandom2
+  ports:
+  - protocol: TCP
+    port: 5002
+    targetPort: 5002
+  type: ClusterIP
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploycombine
+  labels:
+    app: deploycombine
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: deploycombine
+  template:
+    metadata:
+      labels:
+        app: deploycombine
+    spec:
+      containers:
+      - name: deploycombine
+        image: jellevink1/combine:build-
+        ports:
+        - containerPort: 5003
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 5003
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: combine
+spec:
+  selector:
+    app: deploycombine
+  ports:
+  - protocol: TCP
+    port: 5003
+    targetPort: 5003
+  type: ClusterIP
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployflask
+  labels:
+    app: deployflask
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: deployflask
+  template:
+    metadata:
+      labels:
+        app: deployflask
+    spec:
+      containers:
+      - name: deployflask
+        image: jellevink1/flask:build-
+        ports:
+        - containerPort: 5000
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 5000
+        env:
+        - name: MYSQL_USER
+          value: {{MYSQL_USER}}
+        env:
+        - name: MYSQL_PASSWORD
+          value: {{MYSQL_PASSWORD}}
+        env:
+        - name: MYSQL_HOST
+          value: {{MYSQL_HOST}}
+        env:
+        - name: MYSQL_DATAB
+          value: {{MYSQL_DATAB}}
+        env:
+        - name: YOUR_SECRET_KEY
+          value: {{YOUR_SECRET_KEY}}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask
+spec:
+  selector:
+    app: deployflask
+  ports: 
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
+  type: LoadBalancer
+
+
